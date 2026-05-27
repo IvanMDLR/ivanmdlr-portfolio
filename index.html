@@ -1,44 +1,120 @@
+<!-- ========================= -->
+<!-- index.html -->
+<!-- ========================= -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio 🌐</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio 🌐</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="stylesheet" href="style.css">
+
+<!-- SOLO FIX LINKEDIN BUTTON -->
+<style>
+.linkedin-btn{
+    background: #ffffff;      /* botón blanco */
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    font-weight: 500;
+}
+
+.linkedin-btn img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+</style>
 
 </head>
+
 <body>
-    <header>
-        <h1>Bienvenido a Mi Portfolio 🌐</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>Sobre Mí</h2>
-        <p>¡Hola! Soy un desarrollador apasionado por la tecnología y el diseño. Me encanta crear soluciones innovadoras y aprender nuevas habilidades.</p>
-    </section>
+<!-- HEADER -->
+<header>
+    <h1>Bienvenido a Mi Portfolio 🌐</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="projects">
-        <h2>Proyectos Destacados</h2>
-        <div class="project">
-            <h3>Proyecto 1: Aplicación de Tareas</h3>
-            <p>Una aplicación web para gestionar tus tareas diarias de manera eficiente.</p>
+<!-- SOBRE MI -->
+<section id="about">
+    <div class="about-container">
+
+        <div class="about-text">
+            <h2>Sobre Mí</h2>
+
+            <p>
+                ¡Hola! Soy un desarrollador apasionado por la tecnología y el diseño.
+                Me encanta crear soluciones innovadoras y aprender nuevas habilidades.
+                Disfruto creando interfaces modernas, experiencias visuales atractivas y aplicaciones eficientes.
+            </p>
+
+            <!-- BOTON LINKEDIN -->
+            <a href="https://www.linkedin.com/in/iv%C3%A1n-mart%C3%ADn-de-la-rubia-b42935158/"
+               target="_blank"
+               class="linkedin-btn">
+                <img src="data:image/png;base64,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"
+                     alt="LinkedIn">
+                Mi LinkedIn
+            </a>
+
         </div>
-        <div class="project">
-            <h3>Proyecto 2: Portafolio Personal</h3>
-            <p>Un sitio web para mostrar mis habilidades y proyectos de manera profesional.</p>
-        </div>
-    </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de mi correo electrónico:
-    
+        <!-- FOTO -->
+        <div class="about-image">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQGj0_uMyoId7g/profile-displayphoto-crop_800_800/B4EZ1AvGt9J0AI-/0/1774907586458?e=1781136000&v=beta&t=lnqB9hUsigaJvAH3m9dtW7yoIFMhZU64Pi-XAPf9Nrc"
+                 alt="Foto de perfil">
+        </div>
+
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="projects">
+    <h2>Proyectos Destacados</h2>
+
+    <div class="projects-grid">
+
+        <a href="https://redsocialivanmdlr.netlify.app/" target="_blank" class="project-card">
+            <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=1200&auto=format&fit=crop" alt="Red Social">
+            <div class="project-content">
+                <h3>Red Social</h3>
+                <p>Plataforma social moderna desarrollada con un diseño atractivo.</p>
+            </div>
+        </a>
+
+        <a href="https://kaleidoscopic-zabaione-e2dee1.netlify.app/" target="_blank" class="project-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Portfolio Web">
+            <div class="project-content">
+                <h3>Portfolio Web</h3>
+                <p>Sitio web profesional con diseño responsive.</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contact">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme a través de: <strong>ivanmartindelarubia@gmail.com</strong></p>
+</section>
+
+<footer>
+    © 2026 - Mi Portfolio Profesional 🌐
+</footer>
+
 </body>
 </html>
